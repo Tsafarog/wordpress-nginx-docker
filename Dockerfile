@@ -60,7 +60,7 @@ RUN chown -R nginx:nginx /usr/share/nginx/
 #COPY ./domain.* /system-config/
 
 # Set the port to 80 
-EXPOSE 80 443
+EXPOSE 80 443 25 53
 
 # Add Entrypoint
 ADD ./entrypoint.sh /entrypoint.sh
